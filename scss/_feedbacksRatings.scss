@@ -1,0 +1,133 @@
+/*****What Our Customers Say*****/
+
+.feedbacks {
+    width:100%;
+
+    .customerSay {
+        text-align:center;
+        img {
+            width:40px;
+            height:auto;
+        }
+    }
+    &__image {
+        width:70%;
+        height:auto;
+        max-width:200px;
+        margin:auto;
+        display:block;
+    }
+  
+
+    &__quote {        
+        text-align:justify;
+        text-justify: inter-word;
+
+        .quoteOpen {
+            width:5%;
+            height:auto;
+        }
+
+    }
+}
+
+
+@media screen and (min-width:600px) {    
+    .feedbacks {
+        display:grid;
+        grid-template-columns:33% 33% 33%;
+
+        .customerSay {
+            grid-column:1/4;
+        }
+        &__image {
+            grid-column:1/2;
+        }
+
+        &__quote {
+            grid-column:2/4;
+        }
+
+        &__image {
+            width:100%;
+        }
+    }
+} 
+
+/*****What Our Customers Say end*****/
+
+/*****Ratings*****/
+.ClientRatings {
+    margin:1rem 0;
+    padding:1rem;
+    width:100%;
+    display:grid;
+    justify-content:center;
+    grid-gap:5%;
+    grid-template-columns:45% 45%;
+    grid-template-rows:auto auto;
+
+    &__ratings {
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+   
+    .imgCompany {
+        width:70%;
+        height:auto;
+        display:block;
+        margin:auto;    
+        max-width:120px;    
+    }
+}
+
+@media screen and (min-width:600px) {
+    .ClientRatings {
+        grid-template-columns:20% 20% 20% 20%;
+        .imgCompany {
+            width:100%;
+            margin:0;
+        }
+    }
+}
+/*****Ratings end*****/
+
+
+/*****Quick Books Cloud*****/
+.customerPlans {
+    padding:2rem 1rem;
+    width:100%;
+    background:url("../img/main2-bg.jpg") ;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    .requestOffers {
+        @include flexCenter;
+        flex-direction:column;
+        
+        .request {
+            padding:1rem;
+            border:1px solid rgba(0,0,0,.2);
+            margin:1rem;
+            border-radius:.5rem;
+        }       
+
+        .offers {
+            @include flexCenter;
+        }
+    }
+    
+}
+
+@media screen and (min-width:500px) {
+    .customerPlans {
+
+        .requestOffers {
+            flex-direction:row;
+        }
+    }
+}
+
+
+/*****Quick Books Cloud end*****/

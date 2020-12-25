@@ -1,0 +1,802 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/*****Applications Hosting Services*****/
+.HostingServices {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  border: 3px solid red;
+  position: relative;
+  /******Our infrastructure Services******/
+  /******Our infrastructure Services end******/
+}
+
+.HostingServices::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../img/main1-bg.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.HostingServices__Hosting {
+  text-align: center;
+  width: 100%;
+}
+
+.HostingServices__Hosting p {
+  margin: 1rem 0;
+}
+
+.HostingServices__Hosting .horizontalLine {
+  display: block;
+  width: 40px;
+  height: auto;
+  margin: auto;
+}
+
+.HostingServices__platform {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+}
+
+.HostingServices__platform .quickBox {
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.HostingServices__platform .imgParent {
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HostingServices__platform img {
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: auto;
+  max-width: 50px;
+}
+
+.HostingServices .quickBooks {
+  padding: 1rem;
+  margin-top: 2em;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.HostingServices .quickBooks .quickBooks__sub {
+  font-size: 1rem;
+}
+
+.HostingServices .quickBooks .quickBooks__sub .freeHosting a {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.HostingServices .quickBooks .imgHostingServer {
+  display: none;
+}
+
+.HostingServices__cloudHosting {
+  margin: 0 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.HostingServices__cloudHosting .Cloud {
+  color: #2a9d8f;
+}
+
+.HostingServices__cloudHosting span {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.HostingServices__infrastructure {
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.HostingServices__infrastructure__heading {
+  width: 100%;
+}
+
+.HostingServices__infrastructure__heading .line {
+  display: block;
+  margin: auto;
+}
+
+.HostingServices__infrastructure h4 {
+  text-align: center;
+}
+
+.HostingServices__infrastructure .container {
+  background: white;
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem .5rem;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.HostingServices__infrastructure .container .card {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+}
+
+.HostingServices__infrastructure .container p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.HostingServices__consultant {
+  margin-top: 2rem;
+}
+
+.HostingServices__consultant .callUs div, .HostingServices__consultant .callUs h4 {
+  display: inline-block;
+  padding: 1rem;
+}
+
+/******Our infrastructure Services start*****/
+@media screen and (min-width: 400px) {
+  .HostingServices__infrastructure .container {
+    float: left;
+    width: 30%;
+  }
+  .HostingServices__consultant {
+    clear: left;
+  }
+}
+
+/******Our infrastructure Services end******/
+@media screen and (min-width: 600px) {
+  .quickBooks {
+    max-width: 1100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+  }
+  .quickBooks .imgHostingServer {
+    display: block !important;
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+/*****Ace Cloud Hosting*****/
+.cloudHosting {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  padding: 1.5rem;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.cloudHosting .hostingServer {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  max-width: 200px;
+}
+
+.cloudHosting__why img {
+  width: 40px;
+  height: auto;
+}
+
+.cloudHosting__box {
+  padding: .5rem;
+  margin: .5rem 0;
+}
+
+.cloudHosting__box .certified {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin: .5rem 0;
+}
+
+.cloudHosting__box .certified, .cloudHosting__box .satisfaction {
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .cloudHosting {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .cloudHosting__why {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .cloudHosting__box {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .cloudHosting .hostingServer {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+}
+
+/*****Ace Cloud Hosting end*****/
+/*****What Our Customers Say*****/
+.feedbacks {
+  width: 100%;
+}
+
+.feedbacks .customerSay {
+  text-align: center;
+}
+
+.feedbacks .customerSay img {
+  width: 40px;
+  height: auto;
+}
+
+.feedbacks__image {
+  width: 70%;
+  height: auto;
+  max-width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.feedbacks__quote {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.feedbacks__quote .quoteOpen {
+  width: 5%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .feedbacks {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+  }
+  .feedbacks .customerSay {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .feedbacks__image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .feedbacks__quote {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  .feedbacks__image {
+    width: 100%;
+  }
+}
+
+/*****What Our Customers Say end*****/
+/*****Ratings*****/
+.ClientRatings {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 5%;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.ClientRatings__ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.ClientRatings .imgCompany {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+  max-width: 120px;
+}
+
+@media screen and (min-width: 600px) {
+  .ClientRatings {
+    -ms-grid-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20%;
+  }
+  .ClientRatings .imgCompany {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/*****Ratings end*****/
+/*****Quick Books Cloud*****/
+.customerPlans {
+  padding: 2rem 1rem;
+  width: 100%;
+  background: url("../img/main2-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customerPlans .requestOffers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.customerPlans .requestOffers .request {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  border-radius: .5rem;
+}
+
+.customerPlans .requestOffers .offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 500px) {
+  .customerPlans .requestOffers {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/*****Quick Books Cloud end*****/
+/**** QuickBooks Cloud*****/
+.support {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.support__company {
+  width: 100%;
+}
+
+.support__company .allCompany {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  grid-gap: 5%;
+}
+
+.support__company .allCompany img {
+  width: 80%;
+  height: auto;
+  max-width: 90px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .support {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+/**** QuickBooks Cloud*****/
+.ourClients {
+  margin: 2rem 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.ourClients .alpha {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30%)[3];
+      grid-template-columns: repeat(3, 30%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourClients .alpha img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  max-width: 80px;
+}
+
+.ourClients .beta {
+  width: 100%;
+}
+
+.ourClients .beta img {
+  width: 80%;
+  height: auto;
+}
+
+@media screen and (min-width: 400px) {
+  .ourClients .alpha {
+    width: 100%;
+    -ms-grid-columns: 15% 15% 15% 15% 15% 15%;
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+/***** try our services Free for 30 days*****/
+.servicesFree .servicesFree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .servicesFree .servicesFree {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+/***** try our services Free for 30 days end*****/
+/*****footer 1*****/
+.footeLink {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footeLink .column {
+  width: 100%;
+}
+
+.footeLink .column .divider {
+  width: 30%;
+  height: auto;
+}
+
+.footeLink .aceHosting {
+  width: 100%;
+}
+
+.footeLink .aceHosting .logo {
+  width: 100%;
+}
+
+.footeLink .aceHosting .logo img {
+  width: 40%;
+  height: auto;
+}
+
+.footeLink .popular, .footeLink .getStarted, .footeLink .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.footeLink .popular a, .footeLink .getStarted a, .footeLink .company a {
+  text-decoration: none;
+  text-align: left;
+}
+
+@media screen and (min-width: 500px) {
+  .footeLink {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .footeLink .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footeLink {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footeLink .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*****footer 1 end*****/
+main {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#0073bd), to(#06d6a0));
+  background: linear-gradient(to right, #0073bd, #06d6a0);
+}
+
+.topMenu {
+  display: none;
+}
+
+.headerMenu {
+  background: -webkit-gradient(linear, left top, right top, from(#0073bd), to(#06d6a0));
+  background: linear-gradient(to right, #0073bd, #06d6a0);
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  z-index: 2;
+  min-height: 40px;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vh;
+}
+
+.headerMenu .logo {
+  width: 40%;
+}
+
+.headerMenu .logo img {
+  width: 100%;
+  height: auto;
+  min-width: 60px;
+  max-width: 90px;
+}
+
+.headerMenu .hemburger-menu .clickHemburger .line {
+  width: 25px;
+  margin: .3rem 0;
+  height: 5px;
+  background: rebeccapurple;
+}
+
+.headerMenu .hemburger-menu .upper-menu {
+  padding: 1rem;
+  width: 70vw;
+  height: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.headerMenu .hemburger-menu .upper-menu a {
+  text-decoration: none;
+}
+
+.headerMenu .hemburger-menu #toggle:checked ~ .upper-menu {
+  padding: 3rem 0 0 2rem;
+  height: 100vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-left: 2px solid #264653;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#0073bd), to(#06d6a0));
+  background: linear-gradient(to right, #0073bd, #06d6a0);
+}
+
+.headerMenu .hemburger-menu #toggle {
+  display: none;
+}
+
+.headerMenu #toggle:checked ~ .clickHemburger {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: rotate(1080deg);
+          transform: rotate(1080deg);
+  position: relative;
+  top: 3rem;
+  left: 2rem;
+}
+
+.headerMenu #toggle:checked ~ .clickHemburger .first {
+  background-color: red;
+  -webkit-transform: rotate(45deg) translate(9px, 5px);
+          transform: rotate(45deg) translate(9px, 5px);
+}
+
+.headerMenu #toggle:checked ~ .clickHemburger .second {
+  opacity: 0;
+}
+
+.headerMenu #toggle:checked ~ .clickHemburger .third {
+  -webkit-transform: rotate(-45deg) translate(9px, -5px);
+          transform: rotate(-45deg) translate(9px, -5px);
+  background-color: red;
+}
+
+.CoverPhoto {
+  margin-top: 20vh;
+  width: 100%;
+  position: relative;
+  padding: 2rem;
+}
+
+.CoverPhoto__headings {
+  width: 80%;
+}
+
+.CoverPhoto__headings .tryit__Plans {
+  display: inline-block;
+}
+
+.CoverPhoto__headings .tryit__Plans .tryIt {
+  background: white;
+  color: black;
+  border-radius: .4rem;
+}
+
+.CoverPhoto__headings .tryit__Plans .tryIt, .CoverPhoto__headings .tryit__Plans .Plans__offers {
+  padding: .5rem;
+  border-radius: .4rem;
+  border: 1px solid white;
+  margin: 1rem 0;
+}
+
+.CoverPhoto__headings .tryit__Plans .Plans__offers {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .CoverPhoto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .CoverPhoto__headings {
+    width: 40%;
+  }
+  .CoverPhoto__image {
+    width: 60%;
+  }
+}

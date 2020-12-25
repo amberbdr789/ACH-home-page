@@ -1,0 +1,33 @@
+/**** QuickBooks Cloud*****/
+
+.support {
+    margin-top:2rem;
+    width:100%;
+    padding:1rem;
+
+    &__company {
+        width:100%;
+        .allCompany {
+            width:100%;
+            display:grid;
+            grid-template-columns:25% 25% 25%;
+            grid-gap:5%;
+            
+            img {  
+                width:80%;
+                height:auto;
+                max-width:90px;
+                margin:auto;
+            }            
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    .support {
+        display:grid;
+        grid-template-columns:50% 50%;       
+    }
+}
+
+/**** QuickBooks Cloud*****/

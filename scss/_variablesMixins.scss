@@ -1,0 +1,28 @@
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    height:100%;
+    width:100%;
+}
+
+@mixin pseudoB {   
+    content:' ';
+    position:absolute; 
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;       
+}
+
+@mixin flexCenter {
+    display:flex;
+    justify-content:center;  
+}
+
+@mixin transitionEase {
+    transition: all 1s;
+}

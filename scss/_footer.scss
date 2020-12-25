@@ -1,0 +1,92 @@
+/***** try our services Free for 30 days*****/
+.servicesFree {
+
+    .servicesFree {
+        @include flexCenter;
+        flex-direction:column;
+        justify-content:center;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .servicesFree {
+
+        .servicesFree {            
+            flex-direction:row;
+        }
+    }
+
+}
+
+/***** try our services Free for 30 days end*****/
+
+
+/*****footer 1*****/
+.footeLink {
+    width:100%;
+    @include flexCenter;
+    flex-direction:column;  
+
+    .column {
+        width:100%;
+
+        .divider {
+            width:30%;
+            height:auto;
+        }
+    }
+
+    .aceHosting {
+        width:100%;
+        .logo {
+            width:100%;
+            img {
+                width:40%;
+                height:auto;
+            }
+        }
+    }
+
+    .popular, .getStarted, .company {
+        @include flexCenter;
+        flex-direction:column;    
+        text-align:left;    
+
+        a {
+            text-decoration:none;
+            text-align:left;
+        }
+    }
+}
+
+@media screen and (min-width:500px) {
+    .footeLink {
+        display:grid;
+        grid-template-columns:45% 45%;
+        justify-content:center;
+        width:100%;
+    
+        .column {
+            @include flexCenter;
+            flex-direction:column;
+            width:100%;           
+        }
+    }
+}
+
+
+@media screen and (min-width:800px) {
+    .footeLink {
+        display:grid;
+        grid-template-columns:20% 20% 20% 20%;
+        justify-content:center;
+    
+        .column {
+            @include flexCenter;
+            flex-direction:column;
+        }
+    }
+}
+/*****footer 1 end*****/
+
+

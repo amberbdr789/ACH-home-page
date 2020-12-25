@@ -1,0 +1,143 @@
+main {
+    color:white;
+    background:linear-gradient(to right, #0073bd, #06d6a0);
+}
+
+.topMenu {
+    display:none;
+}
+
+.headerMenu {    
+    background:linear-gradient(to right, #0073bd, #06d6a0);
+    flex-wrap:nowrap;
+    z-index:2;
+    min-height:40px;  
+    padding:1rem;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    height:20vh;
+
+
+    .logo {
+        width:40%;
+        img {
+            width:100%;
+            height:auto;
+            min-width:60px;
+            max-width:90px;
+        }
+    }
+
+    .hemburger-menu {      
+
+        .clickHemburger {
+         .line {
+                width:25px;
+                margin:.3rem 0;
+                height:5px;
+                background:rebeccapurple;
+            }           
+        }
+        
+        .upper-menu {
+            padding:1rem;
+            width:70vw;
+            height:0;
+            opacity:0;
+            display:flex;
+            flex-direction:column;
+
+            a {
+                text-decoration:none;
+            }
+        }
+
+        #toggle:checked ~ .upper-menu {
+            padding:3rem 0 0 2rem;
+            height:100vh;           
+            @include transitionEase;
+            border-left:2px solid #264653;
+            opacity:1;
+            background:linear-gradient(to right, #0073bd, #06d6a0);
+        } 
+        #toggle {
+            display: none;
+        }
+    } 
+    
+    #toggle:checked ~ .clickHemburger {
+        @include transitionEase;
+        transform: rotate(1080deg);        
+        position:relative;               
+        top:3rem;
+        left:2rem;
+        .first {
+            background-color:red;
+            transform: rotate(45deg) translate(9px, 5px);
+        }
+        .second {
+            opacity:0;
+        }
+        
+        .third {
+            transform: rotate(-45deg) translate(9px,-5px);
+            background-color:red;
+       }
+
+    }  
+} 
+
+.CoverPhoto {
+    margin-top:20vh;
+    width:100%;    
+    position:relative;
+    padding:2rem;   
+
+  
+
+    &__headings {
+        width:80%;
+
+
+        .tryit__Plans {
+            display:inline-block;
+
+            .tryIt {
+                background:white;
+                color:black;
+                border-radius:.4rem;
+            }
+
+            .tryIt, .Plans__offers {
+                padding:.5rem;               
+                border-radius:.4rem;
+                border:1px solid white;
+                margin:1rem 0;
+            }  
+            .Plans__offers {
+                color:white;
+                display:flex;
+                align-items:center;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:700px) {
+    .CoverPhoto {
+        display:flex;
+        flex-direction:row;
+
+        &__headings {
+            width:40%;
+        }
+
+        &__image {
+            width:60%;
+        }
+    }
+}
